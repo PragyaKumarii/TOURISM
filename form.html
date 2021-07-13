@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<body>
+ <center>
+ <h1 style="font-family: Century Gothic;">YOUR OPINION</h1>
+<h2 ALIGN="center">LET US KNOW IF YOU WANT MORE CONTENT IN WEBSITE</h1>
+ <form>
+ <p><label style="fontfamily: Century Gothic;"> Your Name (required)<br><br>
+ <input id = "cName" class="type" type="text" size="40" required/></lab
+el></p>
+ <p><label style="fontfamily: Century Gothic;"> Your Email (required)<br><br>
+ <input id="cEmail" class="type" type="email" size="40" required/></lab
+el></p>
+ <p><label> <style="font-family: Century Gothic;">Your Message<br><br>
+ <textarea id="cMsg" class="typetext" cols="40" rows="10" ></textarea></label></p>
+
+ <p><input class="send" type="submit" value="SUBMIT" onclick="validate(
+);"></p>
+ </form></center>
+ <script type="text/javascript">
+ function validate() {
+ if((document.getElementById("cName").value == '') && (document.get
+ElementById("cEmail").value == ''))
+ {
+ alert("Please Enter Your Name And Email To Send Feedback.");
+ }
+ else if(document.getElementById("cEmail").value == '')
+ {
+ alert("Please Enter Your Email To Send Feedback.");
+ }
+ else if(document.getElementById("cName").value == '')
+ {
+ alert("Please Enter Your Name To Send Feedback.");
+ }
+ else
+ {
+ sub();
+ }
+ }
+ function sub(){
+ alert("Your Response Has Been Successfully Recorded");
+ }
+ </script>
+
+</body>
+</html>
